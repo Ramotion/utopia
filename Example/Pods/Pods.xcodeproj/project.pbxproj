@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001FB74F9AEB700885510D5F6D96CBA1 /* CoreAnimation+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7A81433010CD2283AE10F10FA90FCC /* CoreAnimation+ext.swift */; };
+		113F3CF755B546F5D8D04E9F483AB515 /* utopia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D5A29173FC318824AF9167A1787875 /* utopia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17B453C9EDB88848866C83BC3BE6CD69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		199442EC5B66128CA37B9C137B7FC447 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5860ABE2C456E381B7C44236D3E72C35 /* Then.swift */; };
+		1DB3CC11B3812E642FB336FA2FA73054 /* UIStackView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7600B37F3A9BB1D263C31510661173 /* UIStackView+ext.swift */; };
+		35937A6BCDC0AD740B2768CF56F18A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		383D2EB0E3E681DAF91F693FF4806F51 /* Pods-utopia_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BC705F24FEF0C2509551609571BA0C /* Pods-utopia_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A186831922E812C53A2B0287F87E449 /* CoreGraphics+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C53C9B7089A487074DEA8FCA98423 /* CoreGraphics+ext.swift */; };
+		58D9DE8371AC03A18432CDD1DC4C1FDB /* Pods-utopia_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0A74F1AB7A853363DFE4B4D2A3BC82 /* Pods-utopia_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B190B9D09C4A639DA32D00681E1B4A7 /* Pods-utopia_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E644A6AE65261EC70753440654B70108 /* Pods-utopia_Example-dummy.m */; };
+		B0A6D51A4E145ADFFA75BB80659E5E72 /* utopia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C4CD51100FDF0887F5BE74F2EA6F /* utopia-dummy.m */; };
+		C14654DF9EF38811281A96FF4FE96851 /* UIView+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA068EC351D6A390A72C638902F57C5B /* UIView+ext.swift */; };
+		D25ED3475BCEADED81151697A420FEDB /* Pods-utopia_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 811DC3ED087EC06C1F00B3BF212E522B /* Pods-utopia_Tests-dummy.m */; };
+		D91F78D2FCE584E9E3E945F8FDD0C80E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3503A735E6B110783B7265841EDF59EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02B55224E15D80EA5F1C45D2650F46E3;
+			remoteInfo = utopia;
+		};
+		72029A40E0611A1140C68D002CC9D4E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55FF8012DB818DE68BDEF0BC12B62C22;
+			remoteInfo = "Pods-utopia_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00204694D022F2E9155D2FBA69F64189 /* Pods-utopia_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-utopia_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		052F24E968093F8FB4406A0F12C73FCF /* Pods-utopia_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utopia_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0B6249AF887FA9F81AC4A014D6E5CCF2 /* Pods-utopia_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utopia_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		19E9C24E30F16F574F8B96B85DD87CC0 /* utopia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "utopia-prefix.pch"; sourceTree = "<group>"; };
+		20446470A88B42488948DCF14C6FA22A /* Pods-utopia_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-utopia_Tests.modulemap"; sourceTree = "<group>"; };
+		31D3D2B3D6B292A173CC796F3CCA1041 /* utopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = utopia.framework; path = utopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42CEF4AFF9087D6A53C4E6D6938AFD8E /* Pods-utopia_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-utopia_Example.modulemap"; sourceTree = "<group>"; };
+		44714D4B8D5C285F042F64C0372C9108 /* utopia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = utopia.modulemap; sourceTree = "<group>"; };
+		4FD168CBBF172F57EB58945D7EF40B10 /* Pods-utopia_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utopia_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		50314F4E956362C4288CF24D6BC9E1F9 /* Pods-utopia_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-utopia_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		52BC705F24FEF0C2509551609571BA0C /* Pods-utopia_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-utopia_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5310656559ADA1A85130407ECACF42A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5860ABE2C456E381B7C44236D3E72C35 /* Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Then.swift; path = utopia/Source/Then.swift; sourceTree = "<group>"; };
+		5E7600B37F3A9BB1D263C31510661173 /* UIStackView+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStackView+ext.swift"; path = "utopia/Source/UIStackView+ext.swift"; sourceTree = "<group>"; };
+		64379BC1DBDCD0D798622F14C7A46784 /* Pods-utopia_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utopia_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7AB4713EB9B38DE5DA5325E9216FF412 /* Pods-utopia_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-utopia_Example-frameworks.sh"; sourceTree = "<group>"; };
+		811DC3ED087EC06C1F00B3BF212E522B /* Pods-utopia_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-utopia_Tests-dummy.m"; sourceTree = "<group>"; };
+		83D2423EE768EBFDD85FE12EC5F0C343 /* Pods_utopia_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_utopia_Example.framework; path = "Pods-utopia_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA453689EDFD2560108471592BF1D8A /* Pods_utopia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_utopia_Tests.framework; path = "Pods-utopia_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1241DF1766F4E9BADDE9C1B33DA042 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9155BD6883D6CC19AE8D6B6DFB3E37E4 /* Pods-utopia_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-utopia_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C0A74F1AB7A853363DFE4B4D2A3BC82 /* Pods-utopia_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-utopia_Example-umbrella.h"; sourceTree = "<group>"; };
+		9C38C4CD51100FDF0887F5BE74F2EA6F /* utopia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "utopia-dummy.m"; sourceTree = "<group>"; };
+		AA1AC1E750CE280093919348606B4512 /* Pods-utopia_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-utopia_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AFE0512DE20499D70CF1857E5E0375D3 /* Pods-utopia_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-utopia_Tests-resources.sh"; sourceTree = "<group>"; };
+		B3708920746F1F58AF63DC4B60F31A41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B5D5A29173FC318824AF9167A1787875 /* utopia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "utopia-umbrella.h"; sourceTree = "<group>"; };
+		B7D22FEE01EE7CC1BB7602BF953F7A53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA068EC351D6A390A72C638902F57C5B /* UIView+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+ext.swift"; path = "utopia/Source/UIView+ext.swift"; sourceTree = "<group>"; };
+		BC59D279D97EBE21F26D45199607EE64 /* utopia.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = utopia.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C61A48599D0599199848EC6F2D94BF33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86C53C9B7089A487074DEA8FCA98423 /* CoreGraphics+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreGraphics+ext.swift"; path = "utopia/Source/CoreGraphics+ext.swift"; sourceTree = "<group>"; };
+		E644A6AE65261EC70753440654B70108 /* Pods-utopia_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-utopia_Example-dummy.m"; sourceTree = "<group>"; };
+		EF7A81433010CD2283AE10F10FA90FCC /* CoreAnimation+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreAnimation+ext.swift"; path = "utopia/Source/CoreAnimation+ext.swift"; sourceTree = "<group>"; };
+		F8B8727EA1EB4995F5C5A576A8283489 /* Pods-utopia_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-utopia_Example-resources.sh"; sourceTree = "<group>"; };
+		F94041DA579573EBA849E855912AD63B /* Pods-utopia_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utopia_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9A957BE118991F7720D27B8131A57A1 /* utopia.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = utopia.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA98000E3A1CC7E06613135300AE4B02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D91F78D2FCE584E9E3E945F8FDD0C80E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD278BC978550A4AE9B41E678E609A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B453C9EDB88848866C83BC3BE6CD69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2120CF428D6B959D5D870F57A103FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35937A6BCDC0AD740B2768CF56F18A0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11A28AF7DC7BE5446A036620A090E613 /* utopia */ = {
+			isa = PBXGroup;
+			children = (
+				EF7A81433010CD2283AE10F10FA90FCC /* CoreAnimation+ext.swift */,
+				C86C53C9B7089A487074DEA8FCA98423 /* CoreGraphics+ext.swift */,
+				5860ABE2C456E381B7C44236D3E72C35 /* Then.swift */,
+				5E7600B37F3A9BB1D263C31510661173 /* UIStackView+ext.swift */,
+				BA068EC351D6A390A72C638902F57C5B /* UIView+ext.swift */,
+				5FFA03CF9D397389BDE47EC2B4E5673F /* Pod */,
+				F8BAF14AAF5461EBEA99FD22DEA7D21D /* Support Files */,
+			);
+			name = utopia;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1805F5B215A6BB8253AF3069F44BC024 /* Pods-utopia_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B7D22FEE01EE7CC1BB7602BF953F7A53 /* Info.plist */,
+				42CEF4AFF9087D6A53C4E6D6938AFD8E /* Pods-utopia_Example.modulemap */,
+				AA1AC1E750CE280093919348606B4512 /* Pods-utopia_Example-acknowledgements.markdown */,
+				9155BD6883D6CC19AE8D6B6DFB3E37E4 /* Pods-utopia_Example-acknowledgements.plist */,
+				E644A6AE65261EC70753440654B70108 /* Pods-utopia_Example-dummy.m */,
+				7AB4713EB9B38DE5DA5325E9216FF412 /* Pods-utopia_Example-frameworks.sh */,
+				F8B8727EA1EB4995F5C5A576A8283489 /* Pods-utopia_Example-resources.sh */,
+				9C0A74F1AB7A853363DFE4B4D2A3BC82 /* Pods-utopia_Example-umbrella.h */,
+				64379BC1DBDCD0D798622F14C7A46784 /* Pods-utopia_Example.debug.xcconfig */,
+				052F24E968093F8FB4406A0F12C73FCF /* Pods-utopia_Example.release.xcconfig */,
+			);
+			name = "Pods-utopia_Example";
+			path = "Target Support Files/Pods-utopia_Example";
+			sourceTree = "<group>";
+		};
+		314E10A520E1FC20BBF4DE364435610D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11A28AF7DC7BE5446A036620A090E613 /* utopia */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5FFA03CF9D397389BDE47EC2B4E5673F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B3708920746F1F58AF63DC4B60F31A41 /* LICENSE */,
+				8E1241DF1766F4E9BADDE9C1B33DA042 /* README.md */,
+				BC59D279D97EBE21F26D45199607EE64 /* utopia.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6F25A9C7898AE73CE49BE48E29B2C0AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83D2423EE768EBFDD85FE12EC5F0C343 /* Pods_utopia_Example.framework */,
+				8DA453689EDFD2560108471592BF1D8A /* Pods_utopia_Tests.framework */,
+				31D3D2B3D6B292A173CC796F3CCA1041 /* utopia.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A3FA389FD750EF17DB338D8B63F4622 /* Pods-utopia_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C61A48599D0599199848EC6F2D94BF33 /* Info.plist */,
+				20446470A88B42488948DCF14C6FA22A /* Pods-utopia_Tests.modulemap */,
+				00204694D022F2E9155D2FBA69F64189 /* Pods-utopia_Tests-acknowledgements.markdown */,
+				0B6249AF887FA9F81AC4A014D6E5CCF2 /* Pods-utopia_Tests-acknowledgements.plist */,
+				811DC3ED087EC06C1F00B3BF212E522B /* Pods-utopia_Tests-dummy.m */,
+				50314F4E956362C4288CF24D6BC9E1F9 /* Pods-utopia_Tests-frameworks.sh */,
+				AFE0512DE20499D70CF1857E5E0375D3 /* Pods-utopia_Tests-resources.sh */,
+				52BC705F24FEF0C2509551609571BA0C /* Pods-utopia_Tests-umbrella.h */,
+				F94041DA579573EBA849E855912AD63B /* Pods-utopia_Tests.debug.xcconfig */,
+				4FD168CBBF172F57EB58945D7EF40B10 /* Pods-utopia_Tests.release.xcconfig */,
+			);
+			name = "Pods-utopia_Tests";
+			path = "Target Support Files/Pods-utopia_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				314E10A520E1FC20BBF4DE364435610D /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				6F25A9C7898AE73CE49BE48E29B2C0AA /* Products */,
+				D24A8A804ADA8A24648ECD3EE352F838 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D24A8A804ADA8A24648ECD3EE352F838 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1805F5B215A6BB8253AF3069F44BC024 /* Pods-utopia_Example */,
+				7A3FA389FD750EF17DB338D8B63F4622 /* Pods-utopia_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F8BAF14AAF5461EBEA99FD22DEA7D21D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5310656559ADA1A85130407ECACF42A2 /* Info.plist */,
+				44714D4B8D5C285F042F64C0372C9108 /* utopia.modulemap */,
+				F9A957BE118991F7720D27B8131A57A1 /* utopia.xcconfig */,
+				9C38C4CD51100FDF0887F5BE74F2EA6F /* utopia-dummy.m */,
+				19E9C24E30F16F574F8B96B85DD87CC0 /* utopia-prefix.pch */,
+				B5D5A29173FC318824AF9167A1787875 /* utopia-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/utopia";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35090237B17AAC2046DD4C88623F7E33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113F3CF755B546F5D8D04E9F483AB515 /* utopia-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444FEAA1E8F218830ABE9D0141765571 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D9DE8371AC03A18432CDD1DC4C1FDB /* Pods-utopia_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0984CA62D07712A2F02C69D604808F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				383D2EB0E3E681DAF91F693FF4806F51 /* Pods-utopia_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02B55224E15D80EA5F1C45D2650F46E3 /* utopia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F1238733C90A273C0FD5F0B3AF38ACB /* Build configuration list for PBXNativeTarget "utopia" */;
+			buildPhases = (
+				81F44E6ED14807F26D56A5C8A771DBFF /* Sources */,
+				F2120CF428D6B959D5D870F57A103FDC /* Frameworks */,
+				35090237B17AAC2046DD4C88623F7E33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = utopia;
+			productName = utopia;
+			productReference = 31D3D2B3D6B292A173CC796F3CCA1041 /* utopia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		04FB59C5C69A12DC2EC6440AB49BCCC0 /* Pods-utopia_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37636FDBCC5F6374B3F21C82B7DC832F /* Build configuration list for PBXNativeTarget "Pods-utopia_Tests" */;
+			buildPhases = (
+				AECC04B6200DE3643D81550AB5167DD5 /* Sources */,
+				DD278BC978550A4AE9B41E678E609A20 /* Frameworks */,
+				8E0984CA62D07712A2F02C69D604808F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE97698CE9412A4CDF7A61A4CA813A1F /* PBXTargetDependency */,
+			);
+			name = "Pods-utopia_Tests";
+			productName = "Pods-utopia_Tests";
+			productReference = 8DA453689EDFD2560108471592BF1D8A /* Pods_utopia_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		55FF8012DB818DE68BDEF0BC12B62C22 /* Pods-utopia_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3030E7BAD6B7A300BA8483AF0925BD64 /* Build configuration list for PBXNativeTarget "Pods-utopia_Example" */;
+			buildPhases = (
+				B9219F17FE04753C37C56686015F34C0 /* Sources */,
+				DA98000E3A1CC7E06613135300AE4B02 /* Frameworks */,
+				444FEAA1E8F218830ABE9D0141765571 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BD2B5A6DB44BB3D7DDC5F8C1E7268EB /* PBXTargetDependency */,
+			);
+			name = "Pods-utopia_Example";
+			productName = "Pods-utopia_Example";
+			productReference = 83D2423EE768EBFDD85FE12EC5F0C343 /* Pods_utopia_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6F25A9C7898AE73CE49BE48E29B2C0AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55FF8012DB818DE68BDEF0BC12B62C22 /* Pods-utopia_Example */,
+				04FB59C5C69A12DC2EC6440AB49BCCC0 /* Pods-utopia_Tests */,
+				02B55224E15D80EA5F1C45D2650F46E3 /* utopia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81F44E6ED14807F26D56A5C8A771DBFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001FB74F9AEB700885510D5F6D96CBA1 /* CoreAnimation+ext.swift in Sources */,
+				3A186831922E812C53A2B0287F87E449 /* CoreGraphics+ext.swift in Sources */,
+				199442EC5B66128CA37B9C137B7FC447 /* Then.swift in Sources */,
+				1DB3CC11B3812E642FB336FA2FA73054 /* UIStackView+ext.swift in Sources */,
+				C14654DF9EF38811281A96FF4FE96851 /* UIView+ext.swift in Sources */,
+				B0A6D51A4E145ADFFA75BB80659E5E72 /* utopia-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECC04B6200DE3643D81550AB5167DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25ED3475BCEADED81151697A420FEDB /* Pods-utopia_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9219F17FE04753C37C56686015F34C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B190B9D09C4A639DA32D00681E1B4A7 /* Pods-utopia_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BD2B5A6DB44BB3D7DDC5F8C1E7268EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = utopia;
+			target = 02B55224E15D80EA5F1C45D2650F46E3 /* utopia */;
+			targetProxy = 3503A735E6B110783B7265841EDF59EA /* PBXContainerItemProxy */;
+		};
+		CE97698CE9412A4CDF7A61A4CA813A1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-utopia_Example";
+			target = 55FF8012DB818DE68BDEF0BC12B62C22 /* Pods-utopia_Example */;
+			targetProxy = 72029A40E0611A1140C68D002CC9D4E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E53B41D24ED74F42999A428C636AC0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052F24E968093F8FB4406A0F12C73FCF /* Pods-utopia_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utopia_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utopia_Example/Pods-utopia_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F711404F30B31A27E717057AF9B2A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A957BE118991F7720D27B8131A57A1 /* utopia.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/utopia/utopia-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/utopia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/utopia/utopia.modulemap";
+				PRODUCT_MODULE_NAME = utopia;
+				PRODUCT_NAME = utopia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6038D1861721817A38FFF954A8F94785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A957BE118991F7720D27B8131A57A1 /* utopia.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/utopia/utopia-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/utopia/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/utopia/utopia.modulemap";
+				PRODUCT_MODULE_NAME = utopia;
+				PRODUCT_NAME = utopia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A70FE4AF108C6E9C18418B4CD29BB82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94041DA579573EBA849E855912AD63B /* Pods-utopia_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utopia_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utopia_Tests/Pods-utopia_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA37DD34ECC311912C55363E0AA78975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64379BC1DBDCD0D798622F14C7A46784 /* Pods-utopia_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utopia_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utopia_Example/Pods-utopia_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1D1E103A39F8FECDBE676881AEBD0B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD168CBBF172F57EB58945D7EF40B10 /* Pods-utopia_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-utopia_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-utopia_Tests/Pods-utopia_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F1238733C90A273C0FD5F0B3AF38ACB /* Build configuration list for PBXNativeTarget "utopia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F711404F30B31A27E717057AF9B2A7F /* Debug */,
+				6038D1861721817A38FFF954A8F94785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
+				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3030E7BAD6B7A300BA8483AF0925BD64 /* Build configuration list for PBXNativeTarget "Pods-utopia_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA37DD34ECC311912C55363E0AA78975 /* Debug */,
+				4E53B41D24ED74F42999A428C636AC0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37636FDBCC5F6374B3F21C82B7DC832F /* Build configuration list for PBXNativeTarget "Pods-utopia_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A70FE4AF108C6E9C18418B4CD29BB82 /* Debug */,
+				F1D1E103A39F8FECDBE676881AEBD0B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
