@@ -1,0 +1,16 @@
+PODS:
+  - utopia (0.1.0)
+
+DEPENDENCIES:
+  - utopia (from `../`)
+
+EXTERNAL SOURCES:
+  utopia:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  utopia: 62f8a2a9add7c9b605c03e8c20972831a569a084
+
+PODFILE CHECKSUM: 98df25f9b82f8a3354b5c577948b9f49e1faaf26
+
+COCOAPODS: 1.5.0
