@@ -4,10 +4,4 @@ use_frameworks!
 
 target 'utopia_Example' do
   pod 'utopia', :path => '../'
-
-  target 'utopia_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
