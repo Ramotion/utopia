@@ -24,7 +24,6 @@ public extension Int {
   /// - Returns:  Returns a random Int point number between 0 and n max
   public static func random(min: Int, max: Int) -> Int {
     return Int.random(n: max - min + 1) + min
-    
   }
 }
 

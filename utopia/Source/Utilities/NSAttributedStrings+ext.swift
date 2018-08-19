@@ -28,11 +28,4 @@ extension NSAttributedString {
     let result = boundingRect(with: size, options: [ .usesLineFragmentOrigin, .usesFontLeading ], context: nil).size
     return result
   }
-
-//  public static func + (left: NSAttributedString, right: NSAttributedString) -> NSAttributedString {
-//    return (left.mutableCopy() as! NSMutableAttributedString).then {
-//      $0.append(right)
-//    }
-//  }
 }
-

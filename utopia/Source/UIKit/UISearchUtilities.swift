@@ -51,15 +51,15 @@ func findDownVC<T>() -> T? where T: UIViewController {
 extension UIView {
   
   public func first(where condition: @escaping (UIView) -> Bool) -> UIView? {
-    return Utopia.first(inView: self, where: condition)
+    return utopia.first(inView: self, where: condition)
   }
   
   public func find<T>() -> T? where T: UIView {
-    return Utopia.findView(self)
+    return utopia.findView(self)
   }
   
   public func findSuperView<T>() -> T? where T: UIView {
-    return Utopia.findSuperView(self)
+    return utopia.findSuperView(self)
   }
   
   public func findAll<T>() -> [T] where T: UIView {
