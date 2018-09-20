@@ -27,7 +27,7 @@ func findUpVC<T>(_ base: UIViewController) -> T? where T: UIViewController {
 
 func findDownVC<T>(_ base: UIViewController) -> T? where T: UIViewController {
   var result: T?
-  for c in base.childViewControllers {
+  for c in base.children {
     if let r = c as? T {
       result = r
     } else {
@@ -125,12 +125,12 @@ func findAllViews<T>(_ root: UIView) -> [T] where T: UIView {
 
 extension UIView {
   
-  public func findConstraints(attribute: NSLayoutAttribute) -> [NSLayoutConstraint] {
+  public func findConstraints(attribute: NSLayoutConstraint.Attribute) -> [NSLayoutConstraint] {
     let result = constraints.filter { $0.firstAttribute == attribute && $0.firstItem as? NSObject == self }
     return result
   }
   
-  public func findSuperviewConstraints(attribute: NSLayoutAttribute) -> [NSLayoutConstraint] {
+  public func findSuperviewConstraints(attribute: NSLayoutConstraint.Attribute) -> [NSLayoutConstraint] {
     let result = superview?.constraints.filter {
       ($0.firstAttribute == attribute && $0.firstItem as? NSObject == self) ||
       ($0.secondAttribute == attribute && $0.secondItem as? NSObject == self)

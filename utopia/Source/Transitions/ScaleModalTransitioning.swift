@@ -88,7 +88,7 @@ public final class ScaleModalDismissAC: NSObject, UIViewControllerAnimatedTransi
       
     }, completion: { _ in
       fromVC.view.removeFromSuperview()
-      fromVC.removeFromParentViewController()
+      fromVC.removeFromParent()
       transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
     })
   }

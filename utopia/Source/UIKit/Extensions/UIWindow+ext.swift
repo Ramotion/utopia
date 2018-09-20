@@ -16,7 +16,7 @@ extension UIWindow {
       //mpdal controller have strong reference to it presenting controller, to correct memory management we must dismiss it before replace parent controller.
       previous?.dismiss(animated: false, completion: nil)
       previous?.view.removeFromSuperview()
-      previous?.removeFromParentViewController()
+      previous?.removeFromParent()
     }
     
     guard let snapShot: UIView = subviews.last?.snapshotView() else {

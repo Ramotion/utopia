@@ -201,10 +201,10 @@ extension CATransition {
     case fade, moveIn, push, reveal
     var value: String {
       switch self {
-      case .fade:     return kCATransitionFade
-      case .moveIn:   return kCATransitionMoveIn
-      case .push:     return kCATransitionPush
-      case .reveal:   return kCATransitionReveal
+      case .fade:     return convertFromCATransitionType(CATransitionType.fade)
+      case .moveIn:   return convertFromCATransitionType(CATransitionType.moveIn)
+      case .push:     return convertFromCATransitionType(CATransitionType.push)
+      case .reveal:   return convertFromCATransitionType(CATransitionType.reveal)
       }
     }
   }
@@ -213,19 +213,19 @@ extension CATransition {
     case fromRight, fromLeft, fromTop, fromBottom
     var value: String {
       switch self {
-      case .fromRight:    return kCATransitionFromRight
-      case .fromLeft:     return kCATransitionFromLeft
-      case .fromTop:      return kCATransitionFromTop
-      case .fromBottom:   return kCATransitionFromBottom
+      case .fromRight:    return convertFromCATransitionSubtype(CATransitionSubtype.fromRight)
+      case .fromLeft:     return convertFromCATransitionSubtype(CATransitionSubtype.fromLeft)
+      case .fromTop:      return convertFromCATransitionSubtype(CATransitionSubtype.fromTop)
+      case .fromBottom:   return convertFromCATransitionSubtype(CATransitionSubtype.fromBottom)
       }
     }
   }
   
   public convenience init(type: Kind, subtype: Subkind? = nil) {
     self.init()
-    self.type = type.value
+    self.type = convertToCATransitionType(type.value)
     if let subtype = subtype {
-      self.subtype = subtype.value
+      self.subtype = convertToOptionalCATransitionSubtype(subtype.value)
     }
   }
   
@@ -246,4 +246,25 @@ extension CATransaction {
     block()
     commit()
   }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromCATransitionType(_ input: CATransitionType) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromCATransitionSubtype(_ input: CATransitionSubtype) -> String {
+	return input.rawValue
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToCATransitionType(_ input: String) -> CATransitionType {
+	return CATransitionType(rawValue: input)
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalCATransitionSubtype(_ input: String?) -> CATransitionSubtype? {
+	guard let input = input else { return nil }
+	return CATransitionSubtype(rawValue: input)
 }

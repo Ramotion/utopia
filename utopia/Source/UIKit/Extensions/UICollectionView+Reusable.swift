@@ -44,7 +44,7 @@ public extension UICollectionView {
     _ type: T.Type,
     withIdentifier reuseIdentifier: String = T.reuseIdentifier)
   {
-    registerSupplement(T.self, kind: UICollectionElementKindSectionHeader)
+    registerSupplement(T.self, kind: UICollectionView.elementKindSectionHeader)
   }
 
   func dequeueHeader<T: UICollectionReusableView>(
@@ -52,14 +52,14 @@ public extension UICollectionView {
     withIdentifier reuseIdentifier: String = T.reuseIdentifier,
     for indexPath: IndexPath) -> T
   {
-    return dequeueSupplement(kind: UICollectionElementKindSectionHeader, for: indexPath)
+    return dequeueSupplement(kind: UICollectionView.elementKindSectionHeader, for: indexPath)
   }
 
   func registerFooter<T: UICollectionReusableView>(
     _ type: T.Type,
     withIdentifier reuseIdentifier: String = T.reuseIdentifier)
   {
-    registerSupplement(T.self, kind: UICollectionElementKindSectionFooter)
+    registerSupplement(T.self, kind: UICollectionView.elementKindSectionFooter)
   }
 
   func dequeueFooter<T: UICollectionReusableView>(
@@ -67,7 +67,7 @@ public extension UICollectionView {
     withIdentifier reuseIdentifier: String = T.reuseIdentifier,
     for indexPath: IndexPath) -> T
   {
-    return dequeueSupplement(kind: UICollectionElementKindSectionFooter, for: indexPath)
+    return dequeueSupplement(kind: UICollectionView.elementKindSectionFooter, for: indexPath)
   }
 
 }

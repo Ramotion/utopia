@@ -62,10 +62,10 @@ public class ButtonsTogglerView: UIStackView {
   
   public required init(defaultIndex index: Int = 0,
                        buttons: [UIButton],
-                       axis: UILayoutConstraintAxis = .horizontal,
+                       axis: NSLayoutConstraint.Axis = .horizontal,
                        spacing: CGFloat = 30,
-                       distribution: UIStackViewDistribution = .equalSpacing,
-                       alignment: UIStackViewAlignment = .fill) {
+                       distribution: UIStackView.Distribution = .equalSpacing,
+                       alignment: UIStackView.Alignment = .fill) {
     
     currentIndex = index
     toggler = Toggler(default: index, togglers: buttons)

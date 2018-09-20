@@ -25,25 +25,25 @@ extension UIBarButtonItem {
     get { return objc_getAssociatedObject(self, &AssociatedKeys.ActionName) as? Action }
   }
   
-  public convenience init(image: UIImage?, style: UIBarButtonItemStyle = .plain, action: @escaping () -> Void) {
+  public convenience init(image: UIImage?, style: UIBarButtonItem.Style = .plain, action: @escaping () -> Void) {
     let handler = Action(action: action)
     self.init(image: image, style: style, target: handler, action: #selector(Action.handleAction(_:)))
     barButtonAction = handler
   }
   
-  public convenience init(title: String?, style: UIBarButtonItemStyle = .plain, action: @escaping () -> Void) {
+  public convenience init(title: String?, style: UIBarButtonItem.Style = .plain, action: @escaping () -> Void) {
     let handler = Action(action: action)
     self.init(title: title, style: style, target: handler, action: #selector(Action.handleAction(_:)))
     barButtonAction = handler
   }
   
-  public convenience init(barButtonSystemItem: UIBarButtonSystemItem, action: @escaping () -> Void) {
+  public convenience init(barButtonSystemItem: UIBarButtonItem.SystemItem, action: @escaping () -> Void) {
     let handler = Action(action: action)
     self.init(barButtonSystemItem: barButtonSystemItem, target: handler, action: #selector(Action.handleAction(_:)))
     barButtonAction = handler
   }
   
-  public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItemStyle, action: @escaping () -> Void) {
+  public convenience init(image: UIImage?, landscapeImagePhone: UIImage?, style: UIBarButtonItem.Style, action: @escaping () -> Void) {
     let handler = Action(action: action)
     self.init(image: image, landscapeImagePhone: landscapeImagePhone, style: style, target: handler, action: #selector(Action.handleAction(_:)))
     barButtonAction = handler

@@ -20,7 +20,7 @@ public extension UIButton {
   ///   - titlePosition: UIViewContentModeTop, UIViewContentModeBottom, UIViewContentModeLeft or UIViewContentModeRight
   ///   - additionalSpacing: Spacing between image and title
   ///   - state: State to apply this behaviour
-  public func set(image: UIImage?, title: String, titlePosition: Position, spacing: CGFloat, state: UIControlState){
+  public func set(image: UIImage?, title: String, titlePosition: Position, spacing: CGFloat, state: UIControl.State){
     imageView?.contentMode = .center
     setImage(image, for: state)
     setTitle(title, for: state)
@@ -39,7 +39,7 @@ public extension UIButton {
   ///   - titlePosition: UIViewContentModeTop, UIViewContentModeBottom, UIViewContentModeLeft or UIViewContentModeRight
   ///   - additionalSpacing: Spacing between image and title
   ///   - state: State to apply this behaviour
-  public func set(image: UIImage?, attributedTitle title: NSAttributedString, titlePosition: Position, spacing: CGFloat, state: UIControlState){
+  public func set(image: UIImage?, attributedTitle title: NSAttributedString, titlePosition: Position, spacing: CGFloat, state: UIControl.State){
     imageView?.contentMode = .center
     setImage(image, for: state)
     
@@ -57,7 +57,7 @@ public extension UIButton {
     
     // Use predefined font, otherwise use the default
     let titleFont: UIFont = titleLabel?.font ?? UIFont()
-    let titleSize: CGSize = title.size(withAttributes: [NSAttributedStringKey.font: titleFont])
+    let titleSize: CGSize = title.size(withAttributes: [NSAttributedString.Key.font: titleFont])
     
     arrange(titleSize: titleSize, imageRect: imageRect, atPosition: position, spacing: spacing)
   }

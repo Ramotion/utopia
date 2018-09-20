@@ -30,11 +30,14 @@
 		35937A6BCDC0AD740B2768CF56F18A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		35BB5E12A394D82FF0F8E675F3000FDB /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CADBB7F40CC7CCB173E2090A583C51 /* Math.swift */; };
 		35F36F6F8769CDC19189C6C44BECE03E /* SignalSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFAA0B21453AB7FAEF276D19B10890A /* SignalSubscription.swift */; };
+		391DB7CE215316AB0083B8C3 /* HorizontalAlignmentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DB7CD215316AB0083B8C3 /* HorizontalAlignmentLayout.swift */; };
+		391DB7D0215316F50083B8C3 /* InteractiveDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DB7CF215316F50083B8C3 /* InteractiveDismiss.swift */; };
+		391DB7D4215317990083B8C3 /* GestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DB7D3215317990083B8C3 /* GestureRecognizerDelegate.swift */; };
+		391DB7D6215317A20083B8C3 /* TouchInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DB7D5215317A20083B8C3 /* TouchInteraction.swift */; };
 		398EF3F919D8AFA5093B15156F27E353 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90027142D498AD8ABA5215ADC06AC80 /* AssociatedObject.swift */; };
 		3C087E90B6D5631B925B524FBD183DA5 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A88C1BE5A50F7B80FB3A7EF1DD75D5 /* Associated.swift */; };
 		3C593180EE447D73A5ADBA3AE8909897 /* InputVisibilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D37E1C6C9537466FBA3F006E1A2D /* InputVisibilityController.swift */; };
 		40077E1D3AAA704AC97E1AEDA22CF464 /* StatusBarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EEBAEB1E1FDB6EDA95CFF0B7ECFA7 /* StatusBarAppearance.swift */; };
-		46F572A824B37693AF514E85E0549C58 /* DictionaryErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EDFCC54FF8EC7D7F64E9001D66CD11 /* DictionaryErrors.swift */; };
 		4837A82C9004D6D819B45977200EEF92 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD12A7E3A6444E9DD66F5B3EF62046 /* Haptic.swift */; };
 		4F58D683476B2C93625C121FAC487769 /* CoreAnimation+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB7054EF292E6C6EDA81B3B7AC3586 /* CoreAnimation+ext.swift */; };
 		50202062FF2FEFA5A435C025B28E6F2E /* LayoutGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90010E69BA8984268435FC0BC4C19F /* LayoutGuides.swift */; };
@@ -43,12 +46,10 @@
 		5533FA61D479D4E52F22B6D7E5634127 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78E8030A43AACA23F8A7A60874912D6 /* Signal.swift */; };
 		556DBB6B22CB0D57352504204588353C /* SwiftyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496E51ADD4779D6AC8AEB0E4AC214241 /* SwiftyImageView.swift */; };
 		56AFDBABD2F98A47878F3C6D24D2C18D /* UISearchUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A7A173B2BB4912B56024A0AB99C624 /* UISearchUtilities.swift */; };
-		57436A3B37C2DDBE9953C104FB706A81 /* DictionaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F60E978A7284B439BE2FCDE3600871 /* DictionaryEncoder.swift */; };
 		58D9DE8371AC03A18432CDD1DC4C1FDB /* Pods-utopia_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC125537CD9723ABCD3B1A86A59DF34 /* Pods-utopia_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B190B9D09C4A639DA32D00681E1B4A7 /* Pods-utopia_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9483E800344D13D356F1D83D85F3E8D /* Pods-utopia_Example-dummy.m */; };
 		696FBE84EEB2A8F325E8D551903BF524 /* UIControl+Signals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B061582844CAED75F90A2B4DF96BBF /* UIControl+Signals.swift */; };
 		728E7F3E40B77C6AE1F2EA03435547F9 /* CodableUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BB03A7F405472718898E3CF28F4BF /* CodableUtilities.swift */; };
-		737F4D68613986033F0FE3870FFD20D3 /* DictionaryCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0737DBB484F81C7B892CB23EBFFDEF86 /* DictionaryCodingKey.swift */; };
 		73B0A6F48F64287FDB4E768D7647E352 /* UINavigationController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE531C30779681DEBE1F6FF256BD3F89 /* UINavigationController+ext.swift */; };
 		826398D12955504DC62BF1167ED6D605 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9138D045BD09D068F3E99C8C8C6D9A52 /* Display.swift */; };
 		854C49070D0FE89878C8E5D0124CD65E /* ScrollDismission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507F6CFD78D079631EF4C7414D722BE9 /* ScrollDismission.swift */; };
@@ -68,7 +69,6 @@
 		C1EA2BF250F881A8CE274F56698CA5ED /* Hapticable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DCA45D28C00C59D68C1E66313DA94 /* Hapticable.swift */; };
 		C5B3A325A391083BCBE0225D0E492651 /* AlphaTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F563779A49E6F8BABD9F7F096FAE38 /* AlphaTransition.swift */; };
 		C980A8B4B7D46F918161A80D523F5B9A /* Comparable+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF39CDC694A39ABC8161159EFBF1969 /* Comparable+ext.swift */; };
-		CA40B44897ADD77342DE139BB3D226F0 /* DictionaryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540BECA9B3C663E6711DAB28887C3F18 /* DictionaryDecoder.swift */; };
 		CA706B65DFD60F03EDC1773828AC4306 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002CE560EE32DF3EA2939698D55CA6DC /* UIColor+ext.swift */; };
 		CA834F710C7B8DE7E78756369DB8B082 /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD719201D9EBBBFBC9D36540F14DFA52 /* DateUtilities.swift */; };
 		CAF36258A097CBCB956B2742329293F7 /* SwiftyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7669A602A5ACC46EB4D109E37EBBD /* SwiftyColor.swift */; };
@@ -102,8 +102,6 @@
 		002CE560EE32DF3EA2939698D55CA6DC /* UIColor+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		03B1B68A1207D9BA0DEC85B5917051B3 /* Pods-utopia_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-utopia_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		04B8F1CF04C636E2B5F6107FCFE6A533 /* Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
-		0737DBB484F81C7B892CB23EBFFDEF86 /* DictionaryCodingKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryCodingKey.swift; sourceTree = "<group>"; };
-		09EDFCC54FF8EC7D7F64E9001D66CD11 /* DictionaryErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryErrors.swift; sourceTree = "<group>"; };
 		0B2707546E60D2905D4AF46DB62253F2 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0FEFFB563FD2B0AD812EE3011859DACD /* UIButton+layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+layout.swift"; sourceTree = "<group>"; };
 		1823695516669A365A0F87CA37208712 /* Optional+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Optional+ext.swift"; sourceTree = "<group>"; };
@@ -121,6 +119,10 @@
 		32E405E677F5BBAF94C423F133E9F257 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3519B7CEB0403B5FAF2E8610A97B1501 /* Require.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Require.swift; sourceTree = "<group>"; };
 		352DCA45D28C00C59D68C1E66313DA94 /* Hapticable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hapticable.swift; sourceTree = "<group>"; };
+		391DB7CD215316AB0083B8C3 /* HorizontalAlignmentLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalAlignmentLayout.swift; sourceTree = "<group>"; };
+		391DB7CF215316F50083B8C3 /* InteractiveDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveDismiss.swift; sourceTree = "<group>"; };
+		391DB7D3215317990083B8C3 /* GestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerDelegate.swift; sourceTree = "<group>"; };
+		391DB7D5215317A20083B8C3 /* TouchInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchInteraction.swift; sourceTree = "<group>"; };
 		41498A7B2FB6C962AF2CAA1727FA4BEE /* UITableView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		43A88C1BE5A50F7B80FB3A7EF1DD75D5 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Associated.swift; sourceTree = "<group>"; };
 		474B741D8D941D2368F81BD923718887 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +134,6 @@
 		507F6CFD78D079631EF4C7414D722BE9 /* ScrollDismission.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScrollDismission.swift; sourceTree = "<group>"; };
 		51A7A173B2BB4912B56024A0AB99C624 /* UISearchUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UISearchUtilities.swift; sourceTree = "<group>"; };
 		53845654F739F2E9534B24DEC5A577AD /* SimpleError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleError.swift; sourceTree = "<group>"; };
-		540BECA9B3C663E6711DAB28887C3F18 /* DictionaryDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryDecoder.swift; sourceTree = "<group>"; };
 		55C7669A602A5ACC46EB4D109E37EBBD /* SwiftyColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftyColor.swift; sourceTree = "<group>"; };
 		5C127A0077D1A43E0B1AF57D5C3E0EC4 /* Toggler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Toggler.swift; sourceTree = "<group>"; };
 		655F593EC54CC0CC958E764E3A09282D /* ImageSettable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageSettable.swift; sourceTree = "<group>"; };
@@ -163,7 +164,6 @@
 		A054AB447DAE64070D4411D2FBF7A04B /* Pods-utopia_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-utopia_Example.modulemap"; sourceTree = "<group>"; };
 		A1F184EF2BEEE4AD727A781280D50E64 /* UIView+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
 		A243A5C208AE35F0F0C33004AA1B6620 /* Literals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Literals.swift; sourceTree = "<group>"; };
-		A3F60E978A7284B439BE2FCDE3600871 /* DictionaryEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DictionaryEncoder.swift; sourceTree = "<group>"; };
 		A4F37218272562786A1EEC14A219F1CB /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A9CADBB7F40CC7CCB173E2090A583C51 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		AD719201D9EBBBFBC9D36540F14DFA52 /* DateUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
@@ -237,17 +237,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0C664FBE14B49F100468748D16E8AA36 /* DictionaryCoding */ = {
-			isa = PBXGroup;
-			children = (
-				0737DBB484F81C7B892CB23EBFFDEF86 /* DictionaryCodingKey.swift */,
-				540BECA9B3C663E6711DAB28887C3F18 /* DictionaryDecoder.swift */,
-				A3F60E978A7284B439BE2FCDE3600871 /* DictionaryEncoder.swift */,
-				09EDFCC54FF8EC7D7F64E9001D66CD11 /* DictionaryErrors.swift */,
-			);
-			path = DictionaryCoding;
-			sourceTree = "<group>";
-		};
 		2656CB43AC1C0394F9AE8BB2C3FDA13C /* Pods-utopia_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,21 +265,45 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		391DB7CC2153164E0083B8C3 /* CollectionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				391DB7CD215316AB0083B8C3 /* HorizontalAlignmentLayout.swift */,
+			);
+			path = CollectionLayout;
+			sourceTree = "<group>";
+		};
+		391DB7D1215317290083B8C3 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				391DB7D5215317A20083B8C3 /* TouchInteraction.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		391DB7D2215317760083B8C3 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				391DB7D3215317990083B8C3 /* GestureRecognizerDelegate.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
 		4C85535653D978EAFC4C56A439ADA3FA /* utopia */ = {
 			isa = PBXGroup;
 			children = (
 				AF519AAB88449C069E4444CD0A7D84A8 /* CodingDeconding */,
 				93DB251A38E863705E10AF7CBB6CF7D7 /* Haptic */,
 				01B7BFB7353AE9D18262AD05EA941F21 /* OptimizationTricks */,
-				290A9D5AED8BFBC4A9E64E0F9ED12AE3 /* Pod */,
 				768C46A62A04556281811B75E933B353 /* Signals */,
-				8C27DC0C74C30233B185E75F27845D0A /* Support Files */,
 				D9197775FFD136C39DC9830BA734884F /* SwiftStdLib+ext */,
 				C27A836CBE9528008AEACE449CAEE29E /* Transitions */,
 				A2D72D5D8ACADAD2D6EB22A8DE9C1415 /* Types */,
 				BAA834FD327249945A0B7BD0F2560561 /* UIKit */,
 				CB87AC1D6A6B7C7CC462ED8CAA7B02A3 /* Utilities */,
 				7595EBA1F3F4CD4ECB8D3C14E5C0B1A6 /* Validation */,
+				8C27DC0C74C30233B185E75F27845D0A /* Support Files */,
+				290A9D5AED8BFBC4A9E64E0F9ED12AE3 /* Pod */,
 			);
 			name = utopia;
 			path = ../..;
@@ -362,14 +375,6 @@
 			path = "Example/Pods/Target Support Files/utopia";
 			sourceTree = "<group>";
 		};
-		91132A607D073009ACB11BFAA53E075A /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				9F9BB03A7F405472718898E3CF28F4BF /* CodableUtilities.swift */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
 		93DB251A38E863705E10AF7CBB6CF7D7 /* Haptic */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,8 +397,7 @@
 		AF519AAB88449C069E4444CD0A7D84A8 /* CodingDeconding */ = {
 			isa = PBXGroup;
 			children = (
-				0C664FBE14B49F100468748D16E8AA36 /* DictionaryCoding */,
-				91132A607D073009ACB11BFAA53E075A /* Utilities */,
+				9F9BB03A7F405472718898E3CF28F4BF /* CodableUtilities.swift */,
 			);
 			name = CodingDeconding;
 			path = utopia/Source/CodingDeconding;
@@ -409,6 +413,9 @@
 				8C4EEBAEB1E1FDB6EDA95CFF0B7ECFA7 /* StatusBarAppearance.swift */,
 				5C127A0077D1A43E0B1AF57D5C3E0EC4 /* Toggler.swift */,
 				51A7A173B2BB4912B56024A0AB99C624 /* UISearchUtilities.swift */,
+				391DB7D2215317760083B8C3 /* Gestures */,
+				391DB7D1215317290083B8C3 /* Animations */,
+				391DB7CC2153164E0083B8C3 /* CollectionLayout */,
 				CD49264C135E357003C30ACD16A46BC9 /* Extensions */,
 				E9DB469A97791CE54334A504CC837D76 /* Keyboard */,
 				04906C8071F52A7C8413F1BDB4AC39D6 /* Views */,
@@ -430,6 +437,7 @@
 			children = (
 				73F563779A49E6F8BABD9F7F096FAE38 /* AlphaTransition.swift */,
 				9F7B5BD275A40EA5A7887E4CDB8A5084 /* ScaleModalTransitioning.swift */,
+				391DB7CF215316F50083B8C3 /* InteractiveDismiss.swift */,
 				6C9C018F9DF21B16BCBA1BD49027615B /* TransitioningDelegate.swift */,
 				F79E5A847C4EE299FFCC34B5C4BB4354 /* UIView+transitions.swift */,
 			);
@@ -597,6 +605,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					02B55224E15D80EA5F1C45D2650F46E3 = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -627,16 +640,13 @@
 				FBA69FEF5BF5077D1A63854B7286CC57 /* AsyncOperation.swift in Sources */,
 				DC9BC229563C9D4D76C4ADD9962E181A /* BarButtons.swift in Sources */,
 				D7D7B6285FF6691B27A7D73FF196468A /* Bundle.swift in Sources */,
+				391DB7D6215317A20083B8C3 /* TouchInteraction.swift in Sources */,
 				728E7F3E40B77C6AE1F2EA03435547F9 /* CodableUtilities.swift in Sources */,
 				D968A8500BD1AC4EC3FD58F23FCD6D43 /* Collections+ext.swift in Sources */,
 				C980A8B4B7D46F918161A80D523F5B9A /* Comparable+ext.swift in Sources */,
 				4F58D683476B2C93625C121FAC487769 /* CoreAnimation+ext.swift in Sources */,
 				93C8DEBCE66F72F7E1F2C56C3C48F212 /* CoreGraphics+ext.swift in Sources */,
 				CA834F710C7B8DE7E78756369DB8B082 /* DateUtilities.swift in Sources */,
-				737F4D68613986033F0FE3870FFD20D3 /* DictionaryCodingKey.swift in Sources */,
-				CA40B44897ADD77342DE139BB3D226F0 /* DictionaryDecoder.swift in Sources */,
-				57436A3B37C2DDBE9953C104FB706A81 /* DictionaryEncoder.swift in Sources */,
-				46F572A824B37693AF514E85E0549C58 /* DictionaryErrors.swift in Sources */,
 				826398D12955504DC62BF1167ED6D605 /* Display.swift in Sources */,
 				FC73128B984C0755DA32C1E1A15A5DBB /* GradientView.swift in Sources */,
 				4837A82C9004D6D819B45977200EEF92 /* Haptic.swift in Sources */,
@@ -655,7 +665,9 @@
 				9E1484918CFB62F8A4DBAFD2604BDBBC /* Require.swift in Sources */,
 				D5136D58B70ED60743594DDA623340A6 /* Result.swift in Sources */,
 				F40A972F66F6674CDEA0187860E8785B /* ScaleModalTransitioning.swift in Sources */,
+				391DB7CE215316AB0083B8C3 /* HorizontalAlignmentLayout.swift in Sources */,
 				854C49070D0FE89878C8E5D0124CD65E /* ScrollDismission.swift in Sources */,
+				391DB7D4215317990083B8C3 /* GestureRecognizerDelegate.swift in Sources */,
 				5533FA61D479D4E52F22B6D7E5634127 /* Signal.swift in Sources */,
 				35F36F6F8769CDC19189C6C44BECE03E /* SignalSubscription.swift in Sources */,
 				25625A79AD94F64B1C05606994AEC409 /* SimpleError.swift in Sources */,
@@ -677,6 +689,7 @@
 				26DE0E6B75AB5050F5772B922A2AD509 /* UIButton+ext.swift in Sources */,
 				9052FD4E4A2BF4D796D2521EE47B2069 /* UIButton+layout.swift in Sources */,
 				0BE22BEB5AE38CEC94E0A184C8946969 /* UICollectionView+Reusable.swift in Sources */,
+				391DB7D0215316F50083B8C3 /* InteractiveDismiss.swift in Sources */,
 				CA706B65DFD60F03EDC1773828AC4306 /* UIColor+ext.swift in Sources */,
 				696FBE84EEB2A8F325E8D551903BF524 /* UIControl+Signals.swift in Sources */,
 				02807C6CD1D68F6A8F1D5F5EDBC075F3 /* UIGestureRecognizer+ext.swift in Sources */,
@@ -780,7 +793,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -934,7 +947,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

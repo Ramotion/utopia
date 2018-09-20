@@ -43,7 +43,7 @@ extension UIView {
     case tap
     case longPress
     case pan
-    case swipe(UISwipeGestureRecognizerDirection)
+    case swipe(UISwipeGestureRecognizer.Direction)
     case tapCount(Int)
   }
   

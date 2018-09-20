@@ -2,8 +2,8 @@ import Foundation
 import UIKit
 
 public enum Haptic {
-  case impact(UIImpactFeedbackStyle)
-  case notification(UINotificationFeedbackType)
+  case impact(UIImpactFeedbackGenerator.FeedbackStyle)
+  case notification(UINotificationFeedbackGenerator.FeedbackType)
   case selection
   
   public func generate() {

@@ -25,7 +25,7 @@ extension String {
       size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
     }
     
-    let attributes: [NSAttributedStringKey: Any] = [ NSAttributedStringKey.font: font ]
+    let attributes: [NSAttributedString.Key: Any] = [ NSAttributedString.Key.font: font ]
     let result = (self as NSString).boundingRect(with: size,options: [ .usesLineFragmentOrigin ], attributes: attributes, context: nil).size
     
     return result

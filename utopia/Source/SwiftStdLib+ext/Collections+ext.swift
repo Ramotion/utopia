@@ -73,33 +73,8 @@ extension Collection where Self.Index == Self.Indices.Iterator.Element {
   }
 }
 
-public extension Collection {
-  
-  /**
-   Creats a shuffled version of this array using the Fisher-Yates (fast and uniform) shuffle.
-   - returns: A shuffled version of this array.
-   */
-  public func shuffled() -> [Iterator.Element] {
-    var list = Array(self)
-    list.shuffle()
-    return list
-  }
-}
 
 public extension MutableCollection where Index == Int {
-  /**
-   Shuffle the array using the Fisher-Yates (fast and uniform) shuffle. Mutating.
-   */
-  public mutating func shuffle() {
-    // Empty and single-element collections don't shuffle.
-    guard count > 1 else { return }
-    
-    for i in 0 ..< (count - 1) {
-      let j = Int(arc4random_uniform(UInt32(count - i))) + i
-      guard i != j else { continue }
-      self.swapAt(i, j)
-    }
-  }
   
   /**
    Returns a random element from the collection.

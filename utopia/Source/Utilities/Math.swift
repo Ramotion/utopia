@@ -34,3 +34,17 @@ public enum Progress {
     return centeredProgress
   }
 }
+
+
+public enum Inertia {
+    
+    public static func applyResistance(for source: CGFloat, with scrollPosition: CGFloat, decelerationRate: UIScrollView.DecelerationRate = .fast, maximumScrollDistance: CGFloat = 120) -> CGFloat {
+        let resistantDistance = (decelerationRate.rawValue * abs(scrollPosition) * maximumScrollDistance) / (maximumScrollDistance + decelerationRate.rawValue * abs(scrollPosition))
+        return source + (scrollPosition < 0 ? -resistantDistance : resistantDistance)
+    }
+    
+    // Distance travelled after deceleration to zero velocity at a constant rate
+    public static func project(initialVelocity: CGFloat, decelerationRate: UIScrollView.DecelerationRate = .fast) -> CGFloat {
+        return (initialVelocity / 1000.0) * decelerationRate.rawValue / (1.0 - decelerationRate.rawValue)
+    }
+}

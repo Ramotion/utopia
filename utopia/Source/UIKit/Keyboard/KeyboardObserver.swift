@@ -18,28 +18,28 @@ public enum KeyboardEventType {
 
   public var notificationName: NSNotification.Name {
     switch self {
-    case .willShow:         return .UIKeyboardWillShow
-    case .didShow:          return .UIKeyboardDidShow
-    case .willHide:         return .UIKeyboardWillHide
-    case .didHide:          return .UIKeyboardDidHide
-    case .willChangeFrame:  return .UIKeyboardWillChangeFrame
-    case .didChangeFrame:   return .UIKeyboardDidChangeFrame
+    case .willShow:         return UIResponder.keyboardWillShowNotification
+    case .didShow:          return UIResponder.keyboardDidShowNotification
+    case .willHide:         return UIResponder.keyboardWillHideNotification
+    case .didHide:          return UIResponder.keyboardDidHideNotification
+    case .willChangeFrame:  return UIResponder.keyboardWillChangeFrameNotification
+    case .didChangeFrame:   return UIResponder.keyboardDidChangeFrameNotification
     }
   }
 
   init?(name: NSNotification.Name) {
     switch name {
-    case NSNotification.Name.UIKeyboardWillShow:
+    case UIResponder.keyboardWillShowNotification:
       self = .willShow
-    case NSNotification.Name.UIKeyboardDidShow:
+    case UIResponder.keyboardDidShowNotification:
       self = .didShow
-    case NSNotification.Name.UIKeyboardWillHide:
+    case UIResponder.keyboardWillHideNotification:
       self = .willHide
-    case NSNotification.Name.UIKeyboardDidHide:
+    case UIResponder.keyboardDidHideNotification:
       self = .didHide
-    case NSNotification.Name.UIKeyboardWillChangeFrame:
+    case UIResponder.keyboardWillChangeFrameNotification:
       self = .willChangeFrame
-    case NSNotification.Name.UIKeyboardDidChangeFrame:
+    case UIResponder.keyboardDidChangeFrameNotification:
       self = .didChangeFrame
     default:
       return nil
@@ -62,27 +62,27 @@ public struct KeyboardEvent {
   public let type: KeyboardEventType
   public let keyboardFrameBegin: CGRect
   public let keyboardFrameEnd: CGRect
-  public let curve: UIViewAnimationCurve
+  public let curve: UIView.AnimationCurve
   public let duration: TimeInterval
   public let isLocal: Bool
 
-  public var options: UIViewAnimationOptions {
-    return UIViewAnimationOptions(rawValue: UInt(curve.rawValue << 16))
+  public var options: UIView.AnimationOptions {
+    return UIView.AnimationOptions(rawValue: UInt(curve.rawValue << 16))
   }
 
   init?(notification: Notification) {
     guard let userInfo = (notification as NSNotification).userInfo else { return nil }
     guard let type = KeyboardEventType(name: notification.name) else { return nil }
-    guard let begin = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return nil }
-    guard let end = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return nil }
+    guard let begin = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return nil }
+    guard let end = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return nil }
     guard
-      let curveInt = (userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
-      let curve = UIViewAnimationCurve(rawValue: curveInt)
+      let curveInt = (userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber)?.intValue,
+      let curve = UIView.AnimationCurve(rawValue: curveInt)
       else { return nil }
     guard
-      let durationDouble = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue
+      let durationDouble = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue
       else { return nil }
-    guard let isLocalInt = (userInfo[UIKeyboardIsLocalUserInfoKey] as? NSNumber)?.intValue
+    guard let isLocalInt = (userInfo[UIResponder.keyboardIsLocalUserInfoKey] as? NSNumber)?.intValue
       else { return nil }
 
     self.type = type

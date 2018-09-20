@@ -29,7 +29,7 @@ extension Hapticable where Self: UIButton {
     set { setAssociatedObject(&hapticKey, newValue) }
   }
   
-  public var hapticControlEvents: UIControlEvents? {
+  public var hapticControlEvents: UIControl.Event? {
     get { return getAssociatedObject(&eventKey) }
     set { setAssociatedObject(&eventKey, newValue) }
   }
