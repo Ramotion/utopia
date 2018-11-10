@@ -11,11 +11,13 @@ extension UIControl: Togglable {
   }
 }
 
+#if !os(tvOS)
 extension UISwitch {
   public override func selectedToggle(select: Bool) {
     setOn(select, animated: true)
   }
 }
+#endif
 
 public struct Toggler {
   var togglers = [Togglable]()
