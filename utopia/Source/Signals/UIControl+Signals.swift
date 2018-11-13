@@ -154,6 +154,10 @@ public extension UIControl {
   @objc private dynamic func eventHandlerTouchUpInside() {
     handleUIControlEvent(.touchUpInside)
   }
+    
+  @objc private dynamic func eventHandlerPrimaryActionTriggered() {
+    handleUIControlEvent(.primaryActionTriggered)
+  }
 
   @objc private dynamic func eventHandlerTouchUpOutside() {
     handleUIControlEvent(.touchUpOutside)
