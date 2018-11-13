@@ -43,6 +43,11 @@ public extension UIControl {
     return getOrCreateSignalForUIControlEvent(.touchUpInside);
   }
 
+  /// A signal that fires for each primary action control event.
+  public var onPrimaryActionTriggered: Signal<(Void)> {
+    return getOrCreateSignalForUIControlEvent(.primaryActionTriggered);
+  }
+    
   /// A signal that fires for each touch up outside control event.
   public var onTouchUpOutside: Signal<(Void)> {
     return getOrCreateSignalForUIControlEvent(.touchUpOutside);
