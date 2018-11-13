@@ -97,6 +97,7 @@ public extension UIControl {
     .touchDragEnter: "TouchDragEnter",
     .touchDragExit: "TouchDragExit",
     .touchUpInside: "TouchUpInside",
+    .primaryActionTriggered: "PrimaryActionTriggered",
     .touchUpOutside: "TouchUpOutside",
     .touchCancel: "TouchCancel",
     .valueChanged: "ValueChanged",
