@@ -43,6 +43,11 @@ public extension UIControl {
     return getOrCreateSignalForUIControlEvent(.touchUpInside);
   }
 
+  /// A signal that fires for each primary action control event.
+  public var onPrimaryActionTriggered: Signal<(Void)> {
+    return getOrCreateSignalForUIControlEvent(.primaryActionTriggered);
+  }
+    
   /// A signal that fires for each touch up outside control event.
   public var onTouchUpOutside: Signal<(Void)> {
     return getOrCreateSignalForUIControlEvent(.touchUpOutside);
@@ -92,6 +97,7 @@ public extension UIControl {
     .touchDragEnter: "TouchDragEnter",
     .touchDragExit: "TouchDragExit",
     .touchUpInside: "TouchUpInside",
+    .primaryActionTriggered: "PrimaryActionTriggered",
     .touchUpOutside: "TouchUpOutside",
     .touchCancel: "TouchCancel",
     .valueChanged: "ValueChanged",
@@ -147,6 +153,10 @@ public extension UIControl {
 
   @objc private dynamic func eventHandlerTouchUpInside() {
     handleUIControlEvent(.touchUpInside)
+  }
+    
+  @objc private dynamic func eventHandlerPrimaryActionTriggered() {
+    handleUIControlEvent(.primaryActionTriggered)
   }
 
   @objc private dynamic func eventHandlerTouchUpOutside() {

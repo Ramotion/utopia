@@ -3,125 +3,130 @@ import UIKit
 extension UIViewController {
   
   public func findUp<T>() -> T? where T: UIViewController {
-    return findUpVC(self)
+    return UISearchUtilities.findUpVC(self)
   }
   
   public func findDown<T>() -> T? where T: UIViewController {
-    return findDownVC(self)
+    return UISearchUtilities.findDownVC(self)
   }
 }
 
-func findUpVC<T>(_ base: UIViewController) -> T? where T: UIViewController {
-  
-  var vc: UIViewController? = base
-  
-  while vc != nil {
-    if let vc = vc?.parent as? T {
-      return vc
-    } else {
-      vc = vc?.parent
-    }
-  }
-  return nil
-}
 
-func findDownVC<T>(_ base: UIViewController) -> T? where T: UIViewController {
-  var result: T?
-  for c in base.children {
-    if let r = c as? T {
-      result = r
-    } else {
-      result = findDownVC(c)
+struct UISearchUtilities {
+    
+    static func findUpVC<T>(_ base: UIViewController) -> T? where T: UIViewController {
+        
+        var vc: UIViewController? = base
+        
+        while vc != nil {
+            if let vc = vc?.parent as? T {
+                return vc
+            } else {
+                vc = vc?.parent
+            }
+        }
+        return nil
     }
-    if result != nil {
-      break
+    
+    static func findDownVC<T>(_ base: UIViewController) -> T? where T: UIViewController {
+        var result: T?
+        for c in base.children {
+            if let r = c as? T {
+                result = r
+            } else {
+                result = findDownVC(c)
+            }
+            if result != nil {
+                break
+            }
+        }
+        return result
     }
-  }
-  return result
-}
-
-func findDownVC<T>() -> T? where T: UIViewController {
-  guard let base = UIApplication.shared.keyWindow?.rootViewController else { return nil }
-  if let result = base as? T {
-    return result
-  }
-  return findDownVC(base)
+    
+    static func findDownVC<T>() -> T? where T: UIViewController {
+        guard let base = UIApplication.shared.keyWindow?.rootViewController else { return nil }
+        if let result = base as? T {
+            return result
+        }
+        return findDownVC(base)
+    }
+    
+    static func first(inView view: UIView, where condition: @escaping (UIView) -> Bool) -> UIView? {
+        guard !condition(view) else { return view }
+        
+        var result: UIView?
+        for v in view.subviews {
+            if condition(v) {
+                result = v
+            } else {
+                result = first(inView: v, where: condition)
+            }
+            if result != nil {
+                break
+            }
+        }
+        return result
+    }
+    
+    static func findView<T>(_ root: UIView) -> T? where T: UIView {
+        var result: T?
+        for v in root.subviews {
+            if let r = v as? T {
+                result = r
+            } else {
+                result = findView(v)
+            }
+            if result != nil {
+                break
+            }
+        }
+        return result
+    }
+    
+    static func findSuperView<T>(_ base: UIView) -> T? where T: UIView {
+        var v: UIView? = base
+        while v != nil {
+            if let v = v?.superview as? T {
+                return v
+            } else {
+                v = v?.superview
+            }
+        }
+        return nil
+    }
+    
+    static func findAllViews<T>(_ root: UIView) -> [T] where T: UIView {
+        var result: [T] = []
+        for v in root.subviews {
+            if let r = v as? T {
+                result.append(r)
+            }
+            let rv: [T] = findAllViews(v)
+            result.append(contentsOf: rv)
+        }
+        return result
+    }
 }
 
 extension UIView {
   
   public func first(where condition: @escaping (UIView) -> Bool) -> UIView? {
-    return utopia.first(inView: self, where: condition)
+    return UISearchUtilities.first(inView: self, where: condition)
   }
   
   public func find<T>() -> T? where T: UIView {
-    return utopia.findView(self)
+    return UISearchUtilities.findView(self)
   }
   
   public func findSuperView<T>() -> T? where T: UIView {
-    return utopia.findSuperView(self)
+    return UISearchUtilities.findSuperView(self)
   }
   
   public func findAll<T>() -> [T] where T: UIView {
-    return findAllViews(self)
+    return UISearchUtilities.findAllViews(self)
   }
 }
 
-func first(inView view: UIView, where condition: @escaping (UIView) -> Bool) -> UIView? {
-  guard !condition(view) else { return view }
-  
-  var result: UIView?
-  for v in view.subviews {
-    if condition(v) {
-      result = v
-    } else {
-      result = first(inView: v, where: condition)
-    }
-    if result != nil {
-      break
-    }
-  }
-  return result
-}
-
-func findView<T>(_ root: UIView) -> T? where T: UIView {
-  var result: T?
-  for v in root.subviews {
-    if let r = v as? T {
-      result = r
-    } else {
-      result = findView(v)
-    }
-    if result != nil {
-      break
-    }
-  }
-  return result
-}
-
-func findSuperView<T>(_ base: UIView) -> T? where T: UIView {
-  var v: UIView? = base
-  while v != nil {
-    if let v = v?.superview as? T {
-      return v
-    } else {
-      v = v?.superview
-    }
-  }
-  return nil
-}
-
-func findAllViews<T>(_ root: UIView) -> [T] where T: UIView {
-  var result: [T] = []
-  for v in root.subviews {
-    if let r = v as? T {
-      result.append(r)
-    }
-    let rv: [T] = findAllViews(v)
-    result.append(contentsOf: rv)
-  }
-  return result
-}
 
 extension UIView {
   

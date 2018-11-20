@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 public enum Math {
   public static func lerp<T: FloatingPoint>(from: T, to: T, progress: T) -> T {
