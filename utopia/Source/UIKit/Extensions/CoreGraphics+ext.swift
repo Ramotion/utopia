@@ -1,38 +1,45 @@
-//
-//  CoreGraphics+ext.swift
-//  Vendefy
-//
-//  Created by Dmitriy Kalachev on 4/8/18.
-//  Copyright © 2018 Ramotion. All rights reserved.
-//
-
 import UIKit
 
 public extension CGSize {
 
-  init(_ value: CGFloat) {
+  public init(_ value: CGFloat) {
     self.init(width: value, height: value)
   }
 
-  init(_ width: CGFloat, _ height: CGFloat) {
+  public var asRect: CGRect {
+    return CGRect(size: self)
+  }
+    
+  public init(_ width: CGFloat, _ height: CGFloat) {
     self.init(width: width, height: height)
   }
 
-  var asRect: CGRect {
-    return CGRect(size: self)
-  }
-
-  func centered(in rect: CGRect) -> CGRect {
+  public func centered(in rect: CGRect) -> CGRect {
     var result = self.asRect
     result.origin.x = (rect.width - width) / 2
     result.origin.y = (rect.height - height) / 2
     return result
   }
 
-  var asPixelsForMainScreen: CGSize {
+  public func centered(in size: CGSize) -> CGRect {
+    return centered(in: CGRect(origin: .zero, size: size))
+  }
+    
+  public var asPixelsForMainScreen: CGSize {
     return self * UIScreen.main.scale
   }
 
+  public var center: CGPoint {
+    return CGPoint(x: width / 2, y: height / 2)
+  }
+    
+  public static var greatestFiniteMagnitude: CGSize {
+    return CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
+  }
+    
+  public var area: CGFloat {
+    return width * height
+  }
 }
 
 public extension UIEdgeInsets {
@@ -51,22 +58,28 @@ public extension CGPoint {
 
 public extension CGRect {
 
-  init(size: CGSize) {
+  public init(size: CGSize) {
     self.init(origin: .zero, size: size)
   }
 
-  var center: CGPoint {
+  public var center: CGPoint {
     return CGPoint(x: midX, y: midY)
   }
 
+  public func insetBy(insets: UIEdgeInsets) -> CGRect {
+    let x = origin.x + insets.left
+    let y = origin.y + insets.top
+    let w = size.width - insets.left - insets.right
+    let h = size.height - insets.top - insets.bottom
+    return CGRect(x: x, y: y, width: w, height: h)
+  }
 }
 
 public extension CGAffineTransform {
 
-  init(scale: CGFloat) {
+  public init(scale: CGFloat) {
     self.init(scaleX: scale, y: scale)
   }
-
 }
 
 public func + (lhs: CGPoint, rhs: CGPoint) -> CGPoint {
