@@ -34,6 +34,7 @@
 		391DB7D0215316F50083B8C3 /* InteractiveDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DB7CF215316F50083B8C3 /* InteractiveDismiss.swift */; };
 		391DB7D4215317990083B8C3 /* GestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DB7D3215317990083B8C3 /* GestureRecognizerDelegate.swift */; };
 		391DB7D6215317A20083B8C3 /* TouchInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DB7D5215317A20083B8C3 /* TouchInteraction.swift */; };
+		3948F8B92193A3000043FD2E /* PinnedHeaderFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3948F8B82193A3000043FD2E /* PinnedHeaderFlowLayout.swift */; };
 		398EF3F919D8AFA5093B15156F27E353 /* AssociatedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90027142D498AD8ABA5215ADC06AC80 /* AssociatedObject.swift */; };
 		3C087E90B6D5631B925B524FBD183DA5 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A88C1BE5A50F7B80FB3A7EF1DD75D5 /* Associated.swift */; };
 		3C593180EE447D73A5ADBA3AE8909897 /* InputVisibilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C3D37E1C6C9537466FBA3F006E1A2D /* InputVisibilityController.swift */; };
@@ -123,6 +124,7 @@
 		391DB7CF215316F50083B8C3 /* InteractiveDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveDismiss.swift; sourceTree = "<group>"; };
 		391DB7D3215317990083B8C3 /* GestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureRecognizerDelegate.swift; sourceTree = "<group>"; };
 		391DB7D5215317A20083B8C3 /* TouchInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchInteraction.swift; sourceTree = "<group>"; };
+		3948F8B82193A3000043FD2E /* PinnedHeaderFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinnedHeaderFlowLayout.swift; sourceTree = "<group>"; };
 		41498A7B2FB6C962AF2CAA1727FA4BEE /* UITableView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		43A88C1BE5A50F7B80FB3A7EF1DD75D5 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Associated.swift; sourceTree = "<group>"; };
 		474B741D8D941D2368F81BD923718887 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		391DB7CC2153164E0083B8C3 /* CollectionLayout */ = {
 			isa = PBXGroup;
 			children = (
+				3948F8B82193A3000043FD2E /* PinnedHeaderFlowLayout.swift */,
 				391DB7CD215316AB0083B8C3 /* HorizontalAlignmentLayout.swift */,
 			);
 			path = CollectionLayout;
@@ -609,6 +612,9 @@
 					02B55224E15D80EA5F1C45D2650F46E3 = {
 						LastSwiftMigration = 1000;
 					};
+					55FF8012DB818DE68BDEF0BC12B62C22 = {
+						LastSwiftMigration = 1000;
+					};
 				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -715,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3948F8B92193A3000043FD2E /* PinnedHeaderFlowLayout.swift in Sources */,
 				5B190B9D09C4A639DA32D00681E1B4A7 /* Pods-utopia_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,6 +743,7 @@
 			baseConfigurationReference = F61C18A1761D447D4249ABA4E14D11AE /* Pods-utopia_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -760,6 +768,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -960,6 +969,7 @@
 			baseConfigurationReference = FAFC54380DC5D0CA56A4551D0E7806AE /* Pods-utopia_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -985,6 +995,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
