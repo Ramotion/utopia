@@ -22,7 +22,7 @@ public extension UIView {
 
 public extension UIView {
   public final func updateOpaque() {
-    if let color = backgroundColor, color.alphaValue == 1.0, alpha == 1.0 {
+    if let color = backgroundColor, color.rgba.a == 1.0, alpha == 1.0 {
       isOpaque = true
     }
     else {
