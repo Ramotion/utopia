@@ -109,7 +109,20 @@ import UIKit
       setNeedsDisplay()
     }
   }
-  
+    
+  public override init(frame: CGRect) {
+    super.init(frame: frame)
+    setup()
+  }
+    
+  required public init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+    
+  private func setup() {
+    backgroundColor = .clear
+  }
   
   // MARK: - UIView
   override open func draw(_ rect: CGRect) {
