@@ -2,10 +2,14 @@ import Foundation
 import UIKit
 
 public protocol Togglable: class {
+  var isOn: Bool { get }
   func selectedToggle(select: Bool)
 }
 
 extension UIControl: Togglable {
+  
+  public var isOn: Bool { return isSelected }
+    
   @objc public func selectedToggle(select: Bool) {
     isSelected = select
   }
@@ -22,9 +26,13 @@ extension UISwitch {
 public struct Toggler {
   var togglers = [Togglable]()
   
+  public var index: Int {
+    return togglers.firstIndex(where: { $0.isOn }) ?? 0
+  }
+    
   public init(default index: Int = 0, togglers: [Togglable]) {
     self.togglers = togglers
-    toggleControl(toggle: togglers[index], togglers: togglers)
+    onAt(index: index)
   }
   
   public func on(toggle: Togglable) {
@@ -32,7 +40,9 @@ public struct Toggler {
   }
   
   public func onAt(index: Int) {
-    toggleControl(toggle: togglers[index], togglers: togglers)
+    if let toggler = togglers.at(index) {
+        toggleControl(toggle: toggler, togglers: togglers)
+    }
   }
   
   public mutating func add(toggle: Togglable) {
