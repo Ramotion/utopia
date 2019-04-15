@@ -25,6 +25,8 @@ public class PaginationFlowLayout: UICollectionViewFlowLayout {
           (velocity.y <= 0.0 && attribute.center.y < firstAttribute.center.y)) {
           firstAttribute = attribute;
         }
+      @unknown default:
+        fatalError()
       }
     }
     
@@ -33,6 +35,8 @@ public class PaginationFlowLayout: UICollectionViewFlowLayout {
       return CGPoint(x: firstAttribute.center.x - collectionView.bounds.size.width * 0.5, y: proposedContentOffset.y)
     case .vertical:
       return CGPoint(x: proposedContentOffset.x, y: firstAttribute.center.y - collectionView.bounds.size.height * 0.5)
+    @unknown default:
+      fatalError()
     }
   }
 }

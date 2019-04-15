@@ -80,7 +80,7 @@ public extension MutableCollection where Index == Int {
    Returns a random element from the collection.
    - returns: A random element from the collection.
    */
-  public func random() -> Iterator.Element {
+  func random() -> Iterator.Element {
     let index = Int(arc4random_uniform(UInt32(count)))
     return self[index]
   }

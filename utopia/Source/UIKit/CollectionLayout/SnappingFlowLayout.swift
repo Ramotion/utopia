@@ -43,6 +43,8 @@ final class SnappingFlowLayout: UICollectionViewFlowLayout {
             
             let result = CGPoint(x: proposedContentOffset.x, y: proposedContentOffset.y + offsetAdjustment)
             return result
-        }
+        @unknown default:
+          fatalError()
+      }
     }
 }

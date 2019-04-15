@@ -26,7 +26,7 @@ public class SwiftyImageView: UIView {
 
 public extension SwiftyImageView {
   
-  public enum ImageTransition {
+  enum ImageTransition {
     case noTransition
     case crossDissolve(TimeInterval)
     case curlDown(TimeInterval)
@@ -109,7 +109,7 @@ public extension SwiftyImageView {
     }
   }
   
-  public final func transition(_ imageTransition: ImageTransition, with image: UIImage) {
+  final func transition(_ imageTransition: ImageTransition, with image: UIImage) {
     
     UIView.transition(with: self, duration: imageTransition.duration, options: imageTransition.animationOptions, animations: { imageTransition.animations(self, image) }, completion: imageTransition.completion)
   }

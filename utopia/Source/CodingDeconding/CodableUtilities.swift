@@ -41,7 +41,7 @@ extension KeyedDecodingContainer {
   }
   
   public func decodeSafelyIfPresent<T: Decodable>(_ type: T.Type, forKey key: KeyedDecodingContainer.Key) -> T? {
-    let decoded = try? decodeIfPresent(Safe<T>.self, forKey: key)
+    let decoded = ((try? decodeIfPresent(Safe<T>.self, forKey: key)) as Safe<T>??)
     return decoded??.value
   }
 }
@@ -67,10 +67,10 @@ public struct Id<Entity>: Hashable {
     self.raw = raw
   }
   
-  public var hashValue: Int {
-    return raw.hashValue
+  public func hash(into hasher: inout Hasher) {
+    hasher.combine(raw.hashValue)
   }
-  
+
   public static func ==(lhs: Id, rhs: Id) -> Bool {
     return lhs.raw == rhs.raw
   }

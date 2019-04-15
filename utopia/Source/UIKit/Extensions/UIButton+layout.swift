@@ -7,7 +7,7 @@ public extension UIButton {
   /// - bottom: title below button image
   /// - left: title to the left of button image
   /// - right: title to the right of button image
-  public enum Position: Int {
+  enum Position: Int {
     case top, bottom, left, right
   }
   
@@ -20,7 +20,7 @@ public extension UIButton {
   ///   - titlePosition: UIViewContentModeTop, UIViewContentModeBottom, UIViewContentModeLeft or UIViewContentModeRight
   ///   - additionalSpacing: Spacing between image and title
   ///   - state: State to apply this behaviour
-  public func set(image: UIImage?, title: String, titlePosition: Position, spacing: CGFloat, state: UIControl.State){
+  func set(image: UIImage?, title: String, titlePosition: Position, spacing: CGFloat, state: UIControl.State){
     imageView?.contentMode = .center
     setImage(image, for: state)
     setTitle(title, for: state)
@@ -39,7 +39,7 @@ public extension UIButton {
   ///   - titlePosition: UIViewContentModeTop, UIViewContentModeBottom, UIViewContentModeLeft or UIViewContentModeRight
   ///   - additionalSpacing: Spacing between image and title
   ///   - state: State to apply this behaviour
-  public func set(image: UIImage?, attributedTitle title: NSAttributedString, titlePosition: Position, spacing: CGFloat, state: UIControl.State){
+  func set(image: UIImage?, attributedTitle title: NSAttributedString, titlePosition: Position, spacing: CGFloat, state: UIControl.State){
     imageView?.contentMode = .center
     setImage(image, for: state)
     

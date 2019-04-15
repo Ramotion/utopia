@@ -3,31 +3,31 @@ import UIKit
 public extension UIView {
   
   @discardableResult
-  public func add(to superview: UIView) -> Self {
+  func add(to superview: UIView) -> Self {
     superview.addSubview(self)
     return self
   }
   
   @discardableResult
-  public func insert(to superview: UIView, at index: Int) -> Self {
+  func insert(to superview: UIView, at index: Int) -> Self {
     superview.insertSubview(self, at: index)
     return self
   }
   
   @discardableResult
-  public func insert(to superview: UIView, above view: UIView) -> Self {
+  func insert(to superview: UIView, above view: UIView) -> Self {
     superview.insertSubview(self, aboveSubview: view)
     return self
   }
   
   @discardableResult
-  public func insert(to superview: UIView, below view: UIView) -> Self {
+  func insert(to superview: UIView, below view: UIView) -> Self {
     superview.insertSubview(self, belowSubview: view)
     return self
   }
   
   @discardableResult
-  public func add(to stackview: UIStackView) -> Self {
+  func add(to stackview: UIStackView) -> Self {
     stackview.addArrangedSubview(self)
     return self
   }

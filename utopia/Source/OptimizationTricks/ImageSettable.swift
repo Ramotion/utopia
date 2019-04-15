@@ -2,7 +2,7 @@ import UIKit
 
 
 public extension UIView {
-  public var backgroundImage: UIImage? {
+  var backgroundImage: UIImage? {
     get {
       guard let obj = layer.contents else { return nil }
       return UIImage(cgImage: obj as! CGImage)
@@ -21,7 +21,7 @@ public extension UIView {
 
 
 public extension UIView {
-  public final func updateOpaque() {
+  final func updateOpaque() {
     if let color = backgroundColor, color.rgba.a == 1.0, alpha == 1.0 {
       isOpaque = true
     }

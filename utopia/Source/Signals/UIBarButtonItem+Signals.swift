@@ -13,7 +13,7 @@ import UIKit
 /// Extends UIBarButtonItem with signal for the action.
 public extension UIBarButtonItem {
   /// A signal that fires for each action event.
-  public var onAction: Signal<(Void)> {
+  var onAction: Signal<(Void)> {
     return getOrCreateSignal();
   }
 

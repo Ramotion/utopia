@@ -80,7 +80,7 @@ public class Reachability {
   public var whenReachable: NetworkReachable?
   public var whenUnreachable: NetworkUnreachable?
 
-  @available(*, deprecated: 4.0, renamed: "allowsCellularConnection")
+  @available(*, deprecated, renamed: "allowsCellularConnection")
   public let reachableOnWWAN: Bool = true
 
   /// Set to `false` to force Reachability.connection to .none when on cellular connection (default value `true`)
@@ -89,7 +89,7 @@ public class Reachability {
   // The notification center on which "reachability changed" events are being posted
   public var notificationCenter: NotificationCenter = NotificationCenter.default
 
-  @available(*, deprecated: 4.0, renamed: "connection.description")
+  @available(*, deprecated, renamed: "connection.description")
   public var currentReachabilityString: String {
     return "\(connection)"
   }
@@ -202,43 +202,6 @@ public extension Reachability {
 
     SCNetworkReachabilitySetCallback(reachabilityRef, nil, nil)
     SCNetworkReachabilitySetDispatchQueue(reachabilityRef, nil)
-  }
-
-  // MARK: - *** Connection test methods ***
-  @available(*, deprecated: 4.0, message: "Please use `connection != .none`")
-  var isReachable: Bool {
-    guard isReachableFlagSet else { return false }
-
-    if isConnectionRequiredAndTransientFlagSet {
-      return false
-    }
-
-    if isRunningOnDevice {
-      if isOnWWANFlagSet && !reachableOnWWAN {
-        // We don't want to connect when on cellular connection
-        return false
-      }
-    }
-
-    return true
-  }
-
-  @available(*, deprecated: 4.0, message: "Please use `connection == .cellular`")
-  var isReachableViaWWAN: Bool {
-    // Check we're not on the simulator, we're REACHABLE and check we're on WWAN
-    return isRunningOnDevice && isReachableFlagSet && isOnWWANFlagSet
-  }
-
-  @available(*, deprecated: 4.0, message: "Please use `connection == .wifi`")
-  var isReachableViaWiFi: Bool {
-    // Check we're reachable
-    guard isReachableFlagSet else { return false }
-
-    // If reachable we're reachable, but not on an iOS device (i.e. simulator), we must be on WiFi
-    guard isRunningOnDevice else { return true }
-
-    // Check we're NOT on WWAN
-    return !isOnWWANFlagSet
   }
 
   var description: String {

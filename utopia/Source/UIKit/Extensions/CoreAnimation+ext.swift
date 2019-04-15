@@ -3,7 +3,7 @@ import UIKit
 public extension CALayer {
 
   @discardableResult
-  public func add(to superlayer: CALayer) -> Self {
+  func add(to superlayer: CALayer) -> Self {
     superlayer.addSublayer(self)
     return self
   }
@@ -11,7 +11,7 @@ public extension CALayer {
 
 public extension CATransaction {
   
-  public static func withoutActions(_ block: () -> Void) {
+  static func withoutActions(_ block: () -> Void) {
     begin()
     setDisableActions(true)
     block()

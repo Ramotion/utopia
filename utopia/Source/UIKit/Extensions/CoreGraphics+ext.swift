@@ -2,48 +2,48 @@ import UIKit
 
 public extension CGSize {
 
-  public init(_ value: CGFloat) {
+  init(_ value: CGFloat) {
     self.init(width: value, height: value)
   }
 
-  public var asRect: CGRect {
+  var asRect: CGRect {
     return CGRect(size: self)
   }
     
-  public init(_ width: CGFloat, _ height: CGFloat) {
+  init(_ width: CGFloat, _ height: CGFloat) {
     self.init(width: width, height: height)
   }
 
-  public func centered(in rect: CGRect) -> CGRect {
+  func centered(in rect: CGRect) -> CGRect {
     var result = self.asRect
     result.origin.x = (rect.width - width) / 2
     result.origin.y = (rect.height - height) / 2
     return result
   }
 
-  public func centered(in size: CGSize) -> CGRect {
+  func centered(in size: CGSize) -> CGRect {
     return centered(in: CGRect(origin: .zero, size: size))
   }
     
-  public var asPixelsForMainScreen: CGSize {
+  var asPixelsForMainScreen: CGSize {
     return self * UIScreen.main.scale
   }
 
-  public var center: CGPoint {
+  var center: CGPoint {
     return CGPoint(x: width / 2, y: height / 2)
   }
     
-  public static var greatestFiniteMagnitude: CGSize {
+  static var greatestFiniteMagnitude: CGSize {
     return CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude)
   }
     
-  public var area: CGFloat {
+  var area: CGFloat {
     return width * height
   }
 }
 
 public extension UIEdgeInsets {
-  public init(value: CGFloat) {
+  init(value: CGFloat) {
     self.init(top: value, left: value, bottom: value, right: value)
   }
 }
@@ -58,15 +58,15 @@ public extension CGPoint {
 
 public extension CGRect {
 
-  public init(size: CGSize) {
+  init(size: CGSize) {
     self.init(origin: .zero, size: size)
   }
 
-  public var center: CGPoint {
+  var center: CGPoint {
     return CGPoint(x: midX, y: midY)
   }
 
-  public func insetBy(insets: UIEdgeInsets) -> CGRect {
+  func insetBy(insets: UIEdgeInsets) -> CGRect {
     let x = origin.x + insets.left
     let y = origin.y + insets.top
     let w = size.width - insets.left - insets.right
@@ -77,7 +77,7 @@ public extension CGRect {
 
 public extension CGAffineTransform {
 
-  public init(scale: CGFloat) {
+  init(scale: CGFloat) {
     self.init(scaleX: scale, y: scale)
   }
 }

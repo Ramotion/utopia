@@ -2,12 +2,12 @@ import UIKit
 
 public extension UIImage
 {
-    public final var isOpaque: Bool {
+    final var isOpaque: Bool {
         let alphaInfo = cgImage?.alphaInfo
         return !(alphaInfo == .first || alphaInfo == .last || alphaInfo == .premultipliedFirst || alphaInfo == .premultipliedLast)
     }
 
-    public final func reSize(to size: CGSize) -> UIImage {
+    final func reSize(to size: CGSize) -> UIImage {
         guard size.width > 0 && size.height > 0 else { return self }
         
         UIGraphicsBeginImageContextWithOptions(size, isOpaque, 0.0)
@@ -18,7 +18,7 @@ public extension UIImage
         return scaledImage
     }
     
-    public final func reSize(toFit size: CGSize) -> UIImage {
+    final func reSize(toFit size: CGSize) -> UIImage {
         guard size.width > 0 && size.height > 0 else { return self }
         
         let imageAspectRatio = self.size.width / self.size.height
@@ -40,7 +40,7 @@ public extension UIImage
         return scaledImage
     }
     
-    public final func reSize(toFill size: CGSize) -> UIImage {
+    final func reSize(toFill size: CGSize) -> UIImage {
         guard size.width > 0 && size.height > 0 else { return self }
 
         let imageAspectRatio = self.size.width / self.size.height
@@ -62,7 +62,7 @@ public extension UIImage
         return scaledImage
     }
     
-    public final func rounded(withCornerRadius radius: CGFloat, divideRadiusByImageScale: Bool = false) -> UIImage {
+    final func rounded(withCornerRadius radius: CGFloat, divideRadiusByImageScale: Bool = false) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         
         let scaledRadius = divideRadiusByImageScale ? radius / scale : radius
@@ -78,7 +78,7 @@ public extension UIImage
         return roundedImage
     }
     
-    public final func roundedIntoCircle() -> UIImage {
+    final func roundedIntoCircle() -> UIImage {
         let radius = min(size.width, size.height) / 2.0
         var squareImage = self
         if size.width != size.height {

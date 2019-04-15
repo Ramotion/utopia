@@ -15,7 +15,7 @@ public extension UINavigationController {
   }
 
   func replace(_ vc: UIViewController, with replacementVC: UIViewController, animated: Bool = true) {
-    guard let index = self.viewControllers.index(of: vc)
+    guard let index = self.viewControllers.firstIndex(of: vc)
       else { return }
 
     var viewControllers = self.viewControllers
