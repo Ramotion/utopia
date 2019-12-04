@@ -182,7 +182,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-utopia_Example/Pods-utopia_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-utopia_Example/Pods-utopia_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/utopia/utopia.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -191,7 +191,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-utopia_Example/Pods-utopia_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-utopia_Example/Pods-utopia_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		466881BFDDF35CB453DC3935 /* [CP] Check Pods Manifest.lock */ = {

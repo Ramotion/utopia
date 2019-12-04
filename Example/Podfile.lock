@@ -1,5 +1,5 @@
 PODS:
-  - utopia (0.1.0)
+  - utopia (0.2.1)
 
 DEPENDENCIES:
   - utopia (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  utopia: 62f8a2a9add7c9b605c03e8c20972831a569a084
+  utopia: 5f8b06c09df6ecc26f8f64a01bce85b887cfb4ab
 
 PODFILE CHECKSUM: 632947ed90777377758aa9384f691613d327ceb4
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
