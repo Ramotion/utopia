@@ -110,7 +110,7 @@
 		0AF23AECC795C081BE748C4723CE057A /* TimingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimingFunction.swift; sourceTree = "<group>"; };
 		0FF6C7348EBEAEFD4170C424D4BCE3D8 /* utopia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "utopia-dummy.m"; sourceTree = "<group>"; };
 		14EF0C3DE4EFEA0E5778A433CA4CD179 /* CoreAnimation+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CoreAnimation+ext.swift"; sourceTree = "<group>"; };
-		18F8880D013C6C3D14D3B7BBF1F6490F /* Pods_utopia_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_utopia_Example.framework; path = "Pods-utopia_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F8880D013C6C3D14D3B7BBF1F6490F /* Pods_utopia_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_utopia_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5F8BC37D0A249308F6C8F1F6A760AD /* Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
 		1DC531C68A1E3AE3DD0D565B5009C6BC /* SnappingFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SnappingFlowLayout.swift; sourceTree = "<group>"; };
 		1F250886A725B91C967D832FE8182117 /* CodableUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CodableUtilities.swift; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		67DE85C491FEA063E18FE975D287AE8A /* Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		6F445B8872E22E49C3A15F32995CD03B /* KeyboardObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
 		711763BB62C7FCF13A95D48550B977C7 /* HorizontalAlignmentLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HorizontalAlignmentLayout.swift; sourceTree = "<group>"; };
-		71C2E6B498CEF18B08F8468424F85DA5 /* utopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = utopia.framework; path = utopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C2E6B498CEF18B08F8468424F85DA5 /* utopia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = utopia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A2A66EE6CA6154C626D328D8EF542E /* Pods-utopia_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-utopia_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		75C43CE911AE7AA07FA8466F5CE8C983 /* LayoutGuides.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutGuides.swift; sourceTree = "<group>"; };
 		76B293EF828BFC2736BCDBA53F05680E /* UIView+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+ext.swift"; sourceTree = "<group>"; };
@@ -164,21 +164,21 @@
 		98AF360BFF485744C78A6E9EEC002773 /* ValidatableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidatableView.swift; sourceTree = "<group>"; };
 		99FB83DA33142BF061A550C684A25637 /* None.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = None.swift; sourceTree = "<group>"; };
 		9AF8AF800BF12F49F4E58C57BFC07839 /* UISearchUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UISearchUtilities.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DBC5DF95A0EE329EA2C46E763F35C63 /* ImageSettable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageSettable.swift; sourceTree = "<group>"; };
 		9E3EBB8A34B623DCC2C60F4B70667CED /* UITableView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		A34F1F908DA53E171178C8D5393B7D6E /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		A39D9793C7C083B519AC6DE2AB286A81 /* Pods-utopia_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-utopia_Example-dummy.m"; sourceTree = "<group>"; };
 		A3F5A8B078E50617D6EB62A7B2E0E7A2 /* UIImage+Gradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Gradient.swift"; sourceTree = "<group>"; };
 		A667666FD6576224BF2AA93CBC0543CE /* BarButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BarButtons.swift; sourceTree = "<group>"; };
-		A9043A7F42938589BA7F1792765771D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		AA00D8DFFFDEFA6957DA0F7397A765FA /* utopia.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = utopia.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9043A7F42938589BA7F1792765771D4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AA00D8DFFFDEFA6957DA0F7397A765FA /* utopia.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = utopia.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B5FF0BFB31B4C8B909904D0DE60BF56A /* Random.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		B6AB57E0304A2E319692679F7A0D7255 /* Time.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		B82A32DF7E754364754437F6F0534B60 /* TransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitioningDelegate.swift; sourceTree = "<group>"; };
 		B975E0A19184B52EBBEC8DA569CE774B /* StringValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringValidators.swift; sourceTree = "<group>"; };
 		B9B82B122DA405154C6F594371CFF7E4 /* UINavigationController+ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ext.swift"; sourceTree = "<group>"; };
-		BC2129B947767EA6D7DFA1D7FEF94497 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BC2129B947767EA6D7DFA1D7FEF94497 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BFD21E6EB1F0012F74D5E179FDC34F01 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C215304E149A96B1B94C73274925AC56 /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Associated.swift; sourceTree = "<group>"; };
 		C43C41E05DE14E745301D58E9207FA49 /* utopia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "utopia-prefix.pch"; sourceTree = "<group>"; };
@@ -235,7 +235,6 @@
 				1DC531C68A1E3AE3DD0D565B5009C6BC /* SnappingFlowLayout.swift */,
 				464EEEB16EA58423F21519E9C1059401 /* VerticalAlignmentLayout.swift */,
 			);
-			name = CollectionLayout;
 			path = CollectionLayout;
 			sourceTree = "<group>";
 		};
@@ -245,7 +244,6 @@
 				5890279931DD2DBACAA3DD91BDEAC52D /* InputVisibilityController.swift */,
 				3827DE97E124AE2C713437AD902BA8C4 /* TouchRecognizer.swift */,
 			);
-			name = InputVisibilityController;
 			path = InputVisibilityController;
 			sourceTree = "<group>";
 		};
@@ -265,7 +263,6 @@
 			children = (
 				5A1ABF1F9AD90A73231AE08F1A5662ED /* GestureRecognizerDelegate.swift */,
 			);
-			name = Gestures;
 			path = Gestures;
 			sourceTree = "<group>";
 		};
@@ -284,7 +281,6 @@
 				6F445B8872E22E49C3A15F32995CD03B /* KeyboardObserver.swift */,
 				0F136AE6003DD5FC2E9330FCC98A0513 /* InputVisibilityController */,
 			);
-			name = Keyboard;
 			path = Keyboard;
 			sourceTree = "<group>";
 		};
@@ -421,7 +417,6 @@
 				4DBE97B06C5B123C59CCC9D38FEBE408 /* UIViewController+ext.swift */,
 				5DB2FFAF62E6E9C56E2735BCE75E60BE /* UIWindow+ext.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -498,7 +493,6 @@
 			children = (
 				DDB262B2D3CCB7796CCB38E15DB19059 /* GradientView.swift */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -515,7 +509,6 @@
 			children = (
 				0124D24CA5ADD3990689C503E5F061D5 /* TouchInteraction.swift */,
 			);
-			name = Animations;
 			path = Animations;
 			sourceTree = "<group>";
 		};
@@ -627,6 +620,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					5A4661E8491F445A1944389960998415 = {
+						LastSwiftMigration = 1110;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -634,6 +632,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = C115AF92ECF0F74E6E23618D6F3746B8 /* Products */;
@@ -893,7 +892,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -960,7 +959,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1021,8 +1020,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
