@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension Optional where Wrapped == String {
+public extension Optional where Wrapped == String {
   var isNilOrEmpty: Bool {
     switch self {
     case let string?:
