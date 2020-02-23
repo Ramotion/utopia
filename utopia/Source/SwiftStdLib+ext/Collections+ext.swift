@@ -29,7 +29,7 @@ public extension Dictionary {
   }
 }
 
-extension Optional where Wrapped: Collection {
+public extension Optional where Wrapped: Collection {
   var isNilOrEmpty: Bool {
     switch self {
     case let collection?:
